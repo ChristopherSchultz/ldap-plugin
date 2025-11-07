@@ -4,11 +4,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>net.christopherschultz.mirth.plugins</groupId>
-  <artifactId>cschultz-ldap-auth</artifactId>
+  <artifactId>ldap-auth</artifactId>
   <version>0.1</version>
 
-  <name>cschultz-ldap-auth-plugin</name>
-  <url>https://github.com/ChristopherSchultz/mirth-plugins/ldap-auth</url>
+  <name>ldap-auth-plugin</name>
+  <url>https://github.com/OpenIntegrationEngine/ldap-plugin</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

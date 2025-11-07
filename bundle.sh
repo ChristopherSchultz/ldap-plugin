@@ -3,7 +3,7 @@
 MVN_HOME=${MVN_HOME:-~/packages/apache-maven-3.8.3}
 PATH=$PATH:${MVN_HOME}/bin
 VERSION=0.1
-PACKAGE_NAME=cschultz-ldap-auth
+PACKAGE_NAME=ldap-auth
 BUILD_CLIENT=no
 BUILD_SERVER=yes
 
