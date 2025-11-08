@@ -7,7 +7,7 @@
 -->
 <FindBugsFilter>
   <Match>
-    <Class name="net.christopherschultz.mirth.plugins.auth.ldap.LDAPAuthenticatorPlugin" />
+    <Class name="org.openintegrationengine.engine.plugins.auth.ldap.LDAPAuthenticatorPlugin" />
     <Method name="getExtensionPermissions" />
     <Bug pattern="PZLA_PREFER_ZERO_LENGTH_ARRAYS" />
   </Match>

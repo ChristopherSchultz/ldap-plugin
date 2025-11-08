@@ -1,4 +1,4 @@
-package net.christopherschultz.mirth.plugins.auth.ldap;
+package org.openintegrationengine.engine.plugins.auth.ldap;
 
 import java.io.IOException;
 import java.io.InputStream;
