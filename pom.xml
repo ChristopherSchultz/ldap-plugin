@@ -12,52 +12,31 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>com.mirth</groupId>
       <artifactId>server</artifactId>
-      <version>3.8.0</version>
+      <version>4.5.2</version>
       <scope>system</scope>
       <systemPath>${project.basedir}/libs/mirth-server.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>com.mirth</groupId>
       <artifactId>client-core</artifactId>
-      <version>3.8.0</version>
+      <version>4.5.2</version>
       <scope>system</scope>
       <systemPath>${project.basedir}/libs/mirth-client-core.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>com.mirth</groupId>
       <artifactId>client</artifactId>
-      <version>3.8.0</version>
+      <version>4.5.2</version>
       <scope>system</scope>
       <systemPath>${project.basedir}/libs/mirth-client.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>org.jdesktop</groupId>
-      <artifactId>swingx-core</artifactId>
-      <version>1.6.2</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/libs/swingx-core-1.6.2.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>net.miginfocom</groupId>
-      <artifactId>miglayout-swing</artifactId>
-      <version>4.2</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/libs/miglayout-swing-4.2.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>net.miginfocom</groupId>
-      <artifactId>miglayout-core</artifactId>
-      <version>4.2</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/libs/miglayout-core-4.2.jar</systemPath>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
     <dependency>
@@ -69,13 +48,13 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.13.1</version>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>5.2.1</version>
+      <version>12.1.8</version>
       <type>maven-plugin</type>
     </dependency>
   </dependencies>
