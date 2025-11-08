@@ -22,7 +22,13 @@ if [ "0" != "$status" ] ; then
   exit
 fi
 
-jarsigner -keystore keystore.p12 -storetype PKCS12 -storepass changeit "target/${PACKAGE_JAR}" mirth-client-plugins
+if [ -f keystore.p12 ] ; then
+  jarsigner -keystore keystore.p12 -storetype PKCS12 -storepass changeit "target/${PACKAGE_JAR}" mirth-client-plugins
+else
+  echo "*********"
+  echo "No keystore.p12 file exists for signing. The plug-in will not be signed."
+  echo "*********"
+fi
 
 # Use a separate directory for ZIP assembly
 rm -rf "${PACKAGE_NAME}"
@@ -39,4 +45,7 @@ cp -a README.md "${PACKAGE_NAME}"
 zip -r9 "target/${PACKAGE_ZIP}" "${PACKAGE_NAME}"
 
 rm -rf "${PACKAGE_NAME}"
+
+echo "Build complete."
+echo "You can find your plug-in artifact in target/${PACKAGE_ZIP}"
 
