@@ -454,6 +454,7 @@ public class LDAPAuthenticatorPlugin
                         logger.debug("Must create new local user for '" + username + "'");
                     }
 
+                    ldapUser.setUsername(username); // Use unmapped username
                     uc.updateUser(ldapUser);
                 }
 
