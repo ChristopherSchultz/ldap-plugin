@@ -23,7 +23,7 @@ if [ "0" != "$status" ] ; then
 fi
 
 if [ -f keystore.p12 ] ; then
-  jarsigner -keystore keystore.p12 -storetype PKCS12 -storepass changeit "target/${PACKAGE_JAR}" mirth-client-plugins
+  jarsigner -keystore keystore.p12 -storetype PKCS12 -storepass changeit "target/${PACKAGE_JAR}" ldap-plugin
 else
   echo "*********"
   echo "No keystore.p12 file exists for signing. The plug-in will not be signed."

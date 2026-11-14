@@ -3,7 +3,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>net.christopherschultz.mirth.plugins</groupId>
+  <groupId>org.openintegrationengine.engine.plugins</groupId>
   <artifactId>ldap-auth</artifactId>
   <version>0.1</version>
 
@@ -38,6 +38,29 @@
       <scope>system</scope>
       <systemPath>${project.basedir}/libs/mirth-client.jar</systemPath>
     </dependency>
+<!--
+    <dependency>
+      <groupId>org.jdesktop</groupId>
+      <artifactId>swingx-core</artifactId>
+      <version>1.6.2</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/libs/swingx-core-1.6.2.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>net.miginfocom</groupId>
+      <artifactId>miglayout-swing</artifactId>
+      <version>4.2</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/libs/miglayout-swing-4.2.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>net.miginfocom</groupId>
+      <artifactId>miglayout-core</artifactId>
+      <version>4.2</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/libs/miglayout-core-4.2.jar</systemPath>
+    </dependency>
+-->
     <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -60,7 +83,8 @@
   </dependencies>
 
   <scm>
-    <developerConnection>scm:git:https://github.com/ChristopherSchultz/mirth-plugins</developerConnection>
+    <connection>scm:git:https://github.com/OpenIntegrationEngine/ldap-plugin</connection>
+    <developerConnection>scm:git:https://github.com/OpenIntegrationEngine/ldap-plugin</developerConnection>
     <tag>Release-1</tag>
   </scm>
   <build>
